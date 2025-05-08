@@ -1,0 +1,46 @@
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.full-page-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('assets/img1-lg.jpg') no-repeat center center ; /* Default for large screens */
+  background-size: cover;
+}
+.page2-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('assets/img2-lg.jpg') no-repeat center center fixed; /* Default for large screens */
+  background-size: cover;
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .full-page-image {
+    background: url('assets/img1-md.jpg') no-repeat center center fixed; /* For tablets */
+    background-size: cover;
+  }
+  .page2-image {
+    background: url('assets/img2-md.jpg') no-repeat center center fixed; /* For tablets */
+    background-size: cover;
+  }
+}
+
+/* Small devices (mobile phones, 480px and below) */
+@media (max-width: 480px) {
+  .full-page-image {
+    background: url('assets/img1-sm.jpg') no-repeat center center fixed; /* For mobile */
+    background-size: cover;
+  }
+  .page2-image {
+    background: url('assets/img2-sm.jpg') no-repeat center center fixed; /* For mobile */
+    background-size: cover;
+  }
+}
